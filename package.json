@@ -1,0 +1,19 @@
+{
+  "name": "socked",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "Lightweight WebSocket client & server wrapper with reconnects, events, acks, and dev tools.",
+  "exports": {
+    ".": "./index.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.2"
+  }
+}
