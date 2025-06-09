@@ -1,20 +1,21 @@
-# Tiny WebSocket Kit
+# 🧩 websocket-utils-client-server
 
-A minimal client-server WebSocket utility with:
-- Reconnect & Backoff
-- Acknowledgement support
-- One-time event listeners
-- Connection status
-- Optional debug logging
+A lightweight, zero-dependency JavaScript utility for WebSocket-based client-server communication with:
 
-## Getting Started
+- ✅ Event-based messaging
+- 🔁 Reconnect with backoff strategy
+- 🧠 Acknowledged emits (emit + response)
+- 🔄 One-time listeners
+- 🫀 Ping/pong heartbeat (server-initiated)
+- 🧪 Debug logging & connection status API
+
+---
+
+## 📦 Installation
 
 ```bash
-npm install
-npm start
+npm install websocket-utils-client-server
 ```
-
-Open `client.html` in the browser to test.
 
 ## License
 MIT
