@@ -22,7 +22,7 @@ dist/
 # Test coverage
 coverage/
 
-# Example-only files (not part of core package)
+# Example-only files 
 examples/
 
 # Env files
