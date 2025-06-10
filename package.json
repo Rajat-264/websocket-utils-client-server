@@ -1,6 +1,6 @@
 {
   "name": "socked",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Lightweight WebSocket client & server wrapper with reconnects, events, acks, and dev tools.",
   "main": "dist/index.cjs.js",
   "module": "dist/client.esm.js",
