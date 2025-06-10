@@ -1,10 +1,19 @@
 {
   "name": "socked",
   "version": "1.0.2",
-  "main": "index.js",
+  "main": "dist/client.cjs.js",
   "type": "module",
+  "module": "dist/client.esm.js",
+  "unpkg": "dist/client.umd.min.js",
+  "browser": "dist/client.umd.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/client.esm.js",
+      "require": "./dist/client.cjs.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "keywords": [
     "websocket",
@@ -25,10 +34,14 @@
   "author": "",
   "license": "MIT",
   "description": "Lightweight WebSocket client & server wrapper with reconnects, events, acks, and dev tools.",
-  "exports": {
-    ".": "./index.js"
-  },
   "dependencies": {
     "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.42.0",
+    "rollup-plugin-dts": "^6.2.1"
   }
 }
