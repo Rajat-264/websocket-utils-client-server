@@ -1,12 +1,17 @@
 {
   "name": "socked",
   "version": "1.0.5",
-  "main": "dist/client.cjs.js",
-  "type": "module",
+  "description": "Lightweight WebSocket client & server wrapper with reconnects, events, acks, and dev tools.",
+  "main": "dist/index.cjs.js",
   "module": "dist/client.esm.js",
+  "type": "module",
   "unpkg": "dist/client.umd.min.js",
   "browser": "dist/client.umd.min.js",
   "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    },
     "./client": {
       "import": "./dist/client.esm.js",
       "require": "./dist/client.cjs.js"
@@ -14,10 +19,6 @@
     "./server": {
       "import": "./dist/server.esm.js",
       "require": "./dist/server.cjs.js"
-    },
-    ".": {
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs.js"
     }
   },
   "scripts": {
@@ -41,7 +42,6 @@
   ],
   "author": "",
   "license": "MIT",
-  "description": "Lightweight WebSocket client & server wrapper with reconnects, events, acks, and dev tools.",
   "dependencies": {
     "ws": "^8.18.2"
   },
