@@ -16,9 +16,9 @@
       "require": "./dist/server.cjs.js"
     },
     ".": {
-      "import": "./dist/client.esm.js",
-      "require": "./dist/client.cjs.js"
-    }
+  "import": "./dist/index.esm.js",
+  "require": "./dist/index.cjs.js"
+}
   },
   "scripts": {
     "build": "rollup -c"
