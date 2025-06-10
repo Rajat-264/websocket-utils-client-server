@@ -6,7 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+  "websocket",
+  "realtime",
+  "socket",
+  "client-server",
+  "websocket-wrapper",
+  "ws",
+  "event-based",
+  "acknowledgment",
+  "reconnect",
+  "javascript",
+  "frontend",
+  "nodejs",
+  "utility",
+  "open-source"
+],
   "author": "",
   "license": "MIT",
   "description": "Lightweight WebSocket client & server wrapper with reconnects, events, acks, and dev tools.",
