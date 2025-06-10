@@ -1,26 +1,25 @@
 {
   "name": "socked",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/client.cjs.js",
   "type": "module",
   "module": "dist/client.esm.js",
   "unpkg": "dist/client.umd.min.js",
   "browser": "dist/client.umd.min.js",
   "exports": {
-  "./client": {
-    "import": "./dist/client.esm.js",
-    "require": "./dist/client.cjs.js"
+    "./client": {
+      "import": "./dist/client.esm.js",
+      "require": "./dist/client.cjs.js"
+    },
+    "./server": {
+      "import": "./dist/server.esm.js",
+      "require": "./dist/server.cjs.js"
+    },
+    ".": {
+      "import": "./dist/client.esm.js",
+      "require": "./dist/client.cjs.js"
+    }
   },
-  "./server": {
-    "import": "./dist/server.esm.js",
-    "require": "./dist/server.cjs.js"
-  },
-  ".": {
-    "import": "./dist/client.esm.js",
-    "require": "./dist/client.cjs.js"
-  }
-},
-
   "scripts": {
     "build": "rollup -c"
   },
