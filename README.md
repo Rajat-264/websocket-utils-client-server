@@ -45,6 +45,32 @@ Or clone this repo and use the files in `src/`.
 
 ---
 
+### 1.1. 📥 Importing in Your Project
+
+**If installed from npm:**
+
+For **Node.js** (server):
+```js
+import { createServer } from 'socked';
+```
+
+For **Browser (with a bundler):**
+```js
+import { createClient } from 'socked';
+```
+
+**If using in the browser without a bundler (via CDN):**
+```html
+<script type="module">
+  import { createClient } from 'https://cdn.jsdelivr.net/npm/socked/+esm';
+  // ...your code...
+</script>
+```
+
+> **Note:** Replace `'socked'` with the actual npm package name if it is different.
+
+---
+
 ### 2. 🛠️ Setup Server
 
 Create the file: `examples/server.js`
