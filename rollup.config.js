@@ -1,6 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import  terser from '@rollup/plugin-terser';
+import terser from '@rollup/plugin-terser';
 
 export default [
   {
@@ -17,7 +17,7 @@ export default [
         sourcemap: true,
       },
     ],
-    plugins: [resolve(), commonjs()]
+    plugins: [resolve(), commonjs()],
   },
 
   {
@@ -25,10 +25,10 @@ export default [
     output: {
       file: 'dist/client.umd.js',
       format: 'umd',
-      name: 'LightWS', 
+      name: 'LightWS',
       sourcemap: true,
     },
-    plugins: [resolve(), commonjs()]
+    plugins: [resolve(), commonjs()],
   },
 
   {
@@ -40,6 +40,23 @@ export default [
       sourcemap: true,
       plugins: [terser()],
     },
-    plugins: [resolve(), commonjs()]
+    plugins: [resolve(), commonjs()],
   },
+
+  {
+    input: 'src/server.js',
+    output: [
+      {
+        file: 'dist/server.esm.js',
+        format: 'esm',
+        sourcemap: true,
+      },
+      {
+        file: 'dist/server.cjs.js',
+        format: 'cjs',
+        sourcemap: true,
+      },
+    ],
+    plugins: [resolve(), commonjs()],
+  }
 ];
