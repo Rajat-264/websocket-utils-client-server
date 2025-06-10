@@ -67,8 +67,6 @@ import { createClient } from 'socked';
 </script>
 ```
 
-> **Note:** Replace `'socked'` with the actual npm package name if it is different.
-
 ---
 
 ### 2. 🛠️ Setup Server
